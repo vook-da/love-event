@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#252422">
 <title>사랑 채집 대회 · 《사랑 등등》 출간 기념 이벤트</title>
-<meta name="description" content="일상에서 우연히 만난 ‘사랑’을 제보해주세요. 10분께 배시은 작가 친필 사인본을 드려요.">
+<meta name="description" content="일상에서 우연히 만난 ‘사랑’을 제보해주세요. 당첨자 10분께 배시은 작가 친필 사인본과 커피 쿠폰을 드려요.">
 <meta property="og:title" content="사랑 채집 대회">
 <meta property="og:description" content="당신이 채집한 사랑을 제보해주세요. 《사랑 등등》 출간 기념 이벤트">
-<meta property="og:image" content="https://ohihing.github.io/love-event/og-image.jpg">
+<meta property="og:image" content="https://vook-da.github.io/love-event/og-image.jpg">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <!-- 제목 글꼴: KoPub World 바탕 (안 불러와지면 노토 세리프로 대신 보여요) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/batang.min.css">
@@ -84,6 +84,11 @@
   .prize-pics .sign { width: 66%; left: 0; top: 0; }
   .prize-pics .author { width: 46%; right: 0; bottom: 0; }
   .prize-text { text-align: center; font-size: 21px; line-height: 1.6; margin-top: 36px; }
+
+  .bonus { display: flex; align-items: center; gap: 14px; max-width: 320px; margin: 30px auto 0; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .bonus img { width: 64px; flex: none; opacity: .92; }
+  .bonus p { font-size: 13px; line-height: 1.6; color: var(--mute); }
+  .bonus span { display: block; color: var(--ink); font-size: 13px; }
 
   /* ===== 도서 ===== */
   .cover { width: 52%; max-width: 210px; margin: 0 auto; }
@@ -255,6 +260,10 @@
       <div class="shot author rv" style="--d:.15s"><img src="author.webp" alt="배시은 작가" loading="lazy"></div>
     </div>
     <p class="prize-text serif rv">10분을 선정해<br>‘배시은 작가 친필 사인본’<br>《사랑 등등》을 드려요.</p>
+    <div class="bonus rv">
+      <img src="coupon.webp" alt="메가MGC커피 5,000원 모바일 금액권" loading="lazy">
+      <p><span>그리고 당첨자 전원께</span>메가MGC커피 5,000원 모바일 금액권도 함께 드려요.</p>
+    </div>
   </section>
 
   <!-- ===== 이벤트 도서 ===== -->
@@ -380,7 +389,7 @@
 <script>
   // ▼ 구글 시트 웹 앱 주소
   var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwifQieFzsrXogV3QTZrBMjinrbKwAsBoB6YkDsgtGH1NsNyAl04UDYTpVYwWS4NzdU/exec";
-  var DEADLINE = new Date("2026-11-22T23:59:59+09:00");
+  var DEADLINE = new Date("2026-12-06T23:59:59+09:00");
 
   var $ = function (id) { return document.getElementById(id); };
   var form = $("form"), msg = $("msg"), btn = $("submitBtn");
